@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+
+<body>
+<p>Do you love me</p>
+<button type="submit" onclick="alert(3)">Yes</button>
+<button onmouseover="clickBtn()" id="no" style="position: absolute">No</button>
+<script>
+
+    let no = document.getElementById("no")
+    function clickBtn(){
+        let math = (Math.floor(Math.random()*500))
+        no.style.top = math + "px"
+        no.style.right = math + "px"
+    }
+
+</script>
+</body>
+</html>
